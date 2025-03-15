@@ -45,9 +45,14 @@
 - 模拟器：Bochs 或 QEMU
 
 ### 构建步骤
-oslab目录下编译
+oslab目录下操作
+编译
    ```bash
 ./run.sh -m
+   ```
+上传文件到fire/fire中下载文件
+   ```bash
+sudo mount -o loop,offset=1024 hdc.img /mnt/
    ```
 bochs运行
    ```bash
@@ -58,6 +63,8 @@ qemu运行（可能有亿点慢）
 ./run.sh -qemu
    ```
 ### 目录结构
+
+   ```bash
 fire0.0.0/
 ├── boot/            # 引导程序代码
 ├── fs/              # 文件系统代码
@@ -68,5 +75,10 @@ fire0.0.0/
 ├── mm/              # 内存管理代码
 ├── Makefile         # 构建脚本
 └── ...
+
+   ```
 #### 作者邮箱：lhh_88888888@qq.com
 #### 作者csdn: linhhanpy
+
+
+
